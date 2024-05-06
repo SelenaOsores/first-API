@@ -1,0 +1,31 @@
+###
+POST http://localhost:3001/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Gaston Ibanez",
+    "age": 18,
+    "dni": 46122399,
+    "email": "gastonIbz@gmail.com",
+    "cel": "+54 9 11 24555624"
+}
+###
+GET http://localhost:3001/api/users HTTP/1.1
+
+###
+GET http://localhost:3001/api/users/6639451ab53fe98788abeef8 HTTP/1.1
+
+###
+PUT http://localhost:3001/api/users/6639451ab53fe98788abeef8 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Juan Arias",
+    "age": 37,
+    "dni": 46122399,
+    "email": "juanarias@gmail.com",
+    "cel": "+54 9 11 24555624"
+}
+
+###
+DELETE http://localhost:3001/api/users/6639451ab53fe98788abeef8 HTTP/1.1
